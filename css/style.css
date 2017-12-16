@@ -1,0 +1,31 @@
+.loading-card {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.loading-div {
+    /* background: #a22882 url(../img/FHD0013.JPG) repeat; */
+    background-color: #ac6a9b;
+    background-size: 25% auto;
+    height: 100%;
+    position: fixed;
+    -moz-background-origin: padding;
+    -o-background-origin: padding-box;
+    -webkit-background-origin: padding;
+    background-origin: padding-box;
+    width: 100%;
+    z-index: 20;
+    text-indent: 0;
+    text-align: center;
+    white-space: normal;
+}
+
+.loaded .loading-div {
+    height: 0;
+    -moz-transition: height 2s ease-in 1.5s;
+    -o-transition: height 2s ease-in 1.5s;
+    -webkit-transition: height 2s ease-in;
+    -webkit-transition-delay: 1.5s;
+    transition: height 2s ease-in 1.5s;
+}
